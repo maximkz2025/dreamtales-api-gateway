@@ -20,6 +20,12 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Prompt is required' });
     }
 
+    // Отладочная информация
+    console.log('Environment variables:', {
+      hasOpenAIKey: !!process.env.OPENAI_API_KEY,
+      keyLength: process.env.OPENAI_API_KEY?.length || 0
+    });
+
     // Формируем промпт в зависимости от жанра
     let systemPrompt = 'Ты - опытный рассказчик сказок. Создай увлекательную сказку для детей.';
     
