@@ -1,0 +1,26 @@
+{
+  "name": "dreamtales-api-gateway",
+  "version": "1.0.0",
+  "description": "API Gateway for DreamTales app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vercel": "^latest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "api",
+    "gateway",
+    "openai",
+    "vercel"
+  ],
+  "author": "DreamTales Team",
+  "license": "MIT"
+} 
