@@ -4,6 +4,7 @@
       "maxDuration": 30
     }
   },
+  "outputDirectory": "public",
   "headers": [
     {
       "source": "/api/(.*)",
